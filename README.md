@@ -5,7 +5,7 @@
 <h1>osTicket - Prerequisites and Installation</h1>
 
 
-![image](https://github.com/TawannaWillis/osticket-prereqs/assets/173633642/b863b1b8-f395-4137-92ea-fe8fac6c5658)
+
 
 
 
