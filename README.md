@@ -4,7 +4,7 @@
 
 <h1>osTicket - Prerequisites and Installation</h1>
 
-
+In this lab, I’ll guide you through setting up osTicket from scratch, starting with all the essential installation files. Before we dive into the actual installation, there are a few prep steps we need to tackle. I’m working on a Windows 10 Pro virtual machine hosted on Azure, so everything will be done in that environment. I’ll also point out where to find the installation files we'll be using along the way.
 
 
 
