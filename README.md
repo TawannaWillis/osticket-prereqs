@@ -50,3 +50,16 @@ Once IIS is up and running, the next step is to get PHP Manager for IIS installe
 With the Rewrite Module installed, it’s time to set up our PHP environment. Start by creating a new folder on your C: drive called `C:\PHP`. This will be the home for all the PHP files we’ll be working with. Next, grab the PHP 7.3.8 zip file (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files. Once you’ve got it, extract everything from that zip file straight into the `C:\PHP` folder. Now we’re ready to get PHP integrated with IIS.
 </p>
 <br />
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+<p>
+Next up, you’ll need to download and install the `VC_redist.x86.exe` file from the installation files. This little program is crucial for ensuring everything runs smoothly, so don’t skip it! Just grab the file and run the installer, and you’ll be all set for the next steps.
+</p>
+<br/> 
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+</p>
+Next, it’s time to install MySQL 5.5.62. Grab the installer (`mysql-5.5.62-win32.msi`) from the installation files, and let’s get started. When the MySQL setup wizard pops up, agree to the terms, then choose a Typical install and click Install. Once the installation wraps up, the Configuration Wizard will launch. Here, go with the Standard Configuration, and make sure to select "Install As Windows Service" with the option to launch MySQL Server automatically checked. For this lab, we’ll stick with the default credentials: username `root` and password `Password1`. While these are pretty basic and easy to guess, they’ll work perfectly for our purposes here.
