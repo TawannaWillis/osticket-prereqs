@@ -21,13 +21,9 @@ In this lab, I’ll guide you through setting up osTicket from scratch, starting
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+
+
 
 <h2>Installation Steps</h2>
 
@@ -35,7 +31,7 @@ In this lab, I’ll guide you through setting up osTicket from scratch, starting
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Before we can get started with installing osTicket, we need to enable Internet Information Services (IIS) on our local machine. osTicket relies on IIS to run smoothly, so this step is essential. To do this, head over to the Control Panel and find the option for "Programs." From there, click on "Turn Windows Features On or Off." In the list that appears, scroll down to find "Internet Information Services" and expand it. Next, expand "Web Management Tools" and make sure "IIS Management Console" is checked. Then, go to "World Wide Web Services," expand "Application Development Features," and enable "CGI." Finally, click OK to apply the changes. Now, we’re all set to move forward with the osTicket installation!
 </p>
 <br />
 
