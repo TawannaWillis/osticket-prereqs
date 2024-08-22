@@ -47,6 +47,6 @@ Once IIS is up and running, the next step is to get PHP Manager for IIS installe
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+With the Rewrite Module installed, it’s time to set up our PHP environment. Start by creating a new folder on your C: drive called `C:\PHP`. This will be the home for all the PHP files we’ll be working with. Next, grab the PHP 7.3.8 zip file (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files. Once you’ve got it, extract everything from that zip file straight into the `C:\PHP` folder. Now we’re ready to get PHP integrated with IIS.
 </p>
 <br />
