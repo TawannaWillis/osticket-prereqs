@@ -63,3 +63,11 @@ Next up, you’ll need to download and install the `VC_redist.x86.exe` file from
 </p>
 </p>
 Next, it’s time to install MySQL 5.5.62. Grab the installer (`mysql-5.5.62-win32.msi`) from the installation files, and let’s get started. When the MySQL setup wizard pops up, agree to the terms, then choose a Typical install and click Install. Once the installation wraps up, the Configuration Wizard will launch. Here, go with the Standard Configuration, and make sure to select "Install As Windows Service" with the option to launch MySQL Server automatically checked. For this lab, we’ll stick with the default credentials: username `root` and password `Password1`. While these are pretty basic and easy to guess, they’ll work perfectly for our purposes here.
+</p>
+<br/>
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+</p>
+Before we dive into installing osTicket, we need to tweak some settings in IIS. First, open IIS as an admin and head over to PHP Manager. Once there, click on "Register new PHP version." When prompted, browse to the PHP folder we set up earlier and select the `php-cgi.exe` file. With that done, make sure to reload the IIS server from the management console to apply the changes. Now, IIS is ready to handle osTicket!
+
