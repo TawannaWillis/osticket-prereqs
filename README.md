@@ -39,7 +39,7 @@ Before we can get started with installing osTicket, we need to enable Internet I
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once IIS is up and running, the next step is to get PHP Manager for IIS installed. You’ll find the installer file, PHPManagerforIIS_V1.5.0.msi, in the installation files folder. After that’s done, we’ll need to download and install the Rewrite Module (rewrite_amd64_en-US.msi) to complete the setup. Make sure you install the PHP Manager first, then follow up with the Rewrite Module. These tools are key to making sure osTicket functions properly on our setup.
 </p>
 <br />
 
