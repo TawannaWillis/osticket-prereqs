@@ -78,9 +78,8 @@ Before we dive into installing osTicket, we need to tweak some settings in IIS. 
 </p>
 </p>
 <br/>
+
 Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the installation files, then extract it. Inside the extracted files, you’ll find a folder named "upload"—go ahead and copy that folder to `c:\inetpub\wwwroot`. Once it’s in place, rename the "upload" folder to "osTicket." After that, give your IIS server a quick reload to make sure everything’s in sync. And just like that, osTicket is ready to be configured!
-
-
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
