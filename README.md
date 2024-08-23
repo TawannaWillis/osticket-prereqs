@@ -132,3 +132,5 @@ In the osTicket setup window, it’s time to fill in the details to get everythi
 </p>
 
 Congratulations—osTicket is now installed! But before you start using it, we need to do a little cleanup. First, go to "C:\inetpub\wwwroot\osTicket" and delete the setup folder. Then, head back to "C:\inetpub\wwwroot\osTicket\include" and adjust the permissions on the "ost-config.php" file. It’s time to tighten things up: remove the full access permissions for "Everyone" and switch it to "Read" only. This will keep your setup secure as you start using osTicket.
+
+<h1>osTicket - Key Takeavaways</h1>
