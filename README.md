@@ -91,6 +91,7 @@ Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the in
 </p>
 </p>
 <br/>
+
 In the IIS console, navigate to Sites -> Default -> osTicket. Then, click on "Browse *:80," and you should see the osTicket installation page pop up. However, before we proceed with the installation, we need to enable a few PHP extensions. To do this, stay in the osTicket menu in IIS, and click on PHP Manager. From there, select "Enable or disable an extension." Make sure to enable the following extensions: `php_imap.dll`, `php_intl.dll`, and `php_opcache.dll`. These are essential for osTicket to run smoothly.
 <br/>
 
@@ -101,6 +102,7 @@ In the IIS console, navigate to Sites -> Default -> osTicket. Then, click on "Br
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
+
 Before we proceed with the osTicket installation, there’s one more task to take care of: renaming a file and adjusting its permissions. Head over to `C:\inetpub\wwwroot\osTicket\include` and find the file named `ost-sampleconfig.php`. Rename it to `ost-config.php`. Next, we need to lock down the permissions on this file. Right-click on `ost-config.php`, go to Properties, and adjust the permissions by disabling inheritance. Remove all existing permissions, then add new permissions for "Everyone" and set them to "Full Control." This step ensures that the file is properly secured before we continue with the installation.
 
 
@@ -127,4 +129,5 @@ In the osTicket setup window, it’s time to fill in the details to get everythi
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
+
 Congratulations—osTicket is now installed! But before you start using it, we need to do a little cleanup. First, go to `C:\inetpub\wwwroot\osTicket` and delete the `setup` folder. Then, head back to `C:\inetpub\wwwroot\osTicket\include` and adjust the permissions on the `ost-config.php` file. It’s time to tighten things up: remove the full access permissions for "Everyone" and switch it to "Read" only. This will keep your setup secure as you start using osTicket.
