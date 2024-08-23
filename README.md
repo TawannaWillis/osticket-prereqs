@@ -69,12 +69,15 @@ Next, it’s time to install MySQL 5.5.62. Grab the installer (`mysql-5.5.62-win
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
+<br/>
+
 Before we dive into installing osTicket, we need to tweak some settings in IIS. First, open IIS as an admin and head over to PHP Manager. Once there, click on "Register new PHP version." When prompted, browse to the PHP folder we set up earlier and select the `php-cgi.exe` file. With that done, make sure to reload the IIS server from the management console to apply the changes. Now, IIS is ready to handle osTicket!
 
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 </p>
+<br/>
 Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the installation files, then extract it. Inside the extracted files, you’ll find a folder named "upload"—go ahead and copy that folder to `c:\inetpub\wwwroot`. Once it’s in place, rename the "upload" folder to "osTicket." After that, give your IIS server a quick reload to make sure everything’s in sync. And just like that, osTicket is ready to be configured!
 
 
