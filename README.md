@@ -134,3 +134,5 @@ In the osTicket setup window, it’s time to fill in the details to get everythi
 Congratulations—osTicket is now installed! But before you start using it, we need to do a little cleanup. First, go to "C:\inetpub\wwwroot\osTicket" and delete the setup folder. Then, head back to "C:\inetpub\wwwroot\osTicket\include" and adjust the permissions on the "ost-config.php" file. It’s time to tighten things up: remove the full access permissions for "Everyone" and switch it to "Read" only. This will keep your setup secure as you start using osTicket.
 
 <h1> Key Takeaaways</h1>
+
+osTicket is up and running, ready for action! I set it up to get hands-on experience with how ticketing systems work and how to resolve tickets efficiently. In IT Support, teamwork is key, especially when it comes to solving IT issues through a ticketing system. This lab was my way of building a ticketing system from scratch, laying the foundation for the kind of work I’ll be doing in the future.
