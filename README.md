@@ -16,6 +16,7 @@ In this lab, I’ll guide you through setting up osTicket from scratch, starting
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - Internet Information Services (IIS)
+- -My SQL
 
 <h2>Operating Systems Used </h2>
 
@@ -39,7 +40,7 @@ Before we can get started with installing osTicket, we need to enable Internet I
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once IIS is up and running, the next step is to get PHP Manager for IIS installed. You’ll find the installer file, PHPManagerforIIS_V1.5.0.msi, in the installation files folder. After that’s done, we’ll need to download and install the Rewrite Module (rewrite_amd64_en-US.msi) to complete the setup. Make sure you install the PHP Manager first, then follow up with the Rewrite Module. These tools are key to making sure osTicket functions properly on our setup.
+Once IIS is up and running, the next step is to get PHP Manager for IIS installed. You’ll find the installer file, "PHPManagerforIIS_V1.5.0.msi" in the installation files folder. After that’s done, we’ll need to download and install the Rewrite Module (rewrite_amd64_en-US.msi) to complete the setup. Make sure you install the PHP Manager first, then follow up with the Rewrite Module. These tools are key to making sure osTicket functions properly on our setup.
 </p>
 <br />
 
@@ -47,7 +48,7 @@ Once IIS is up and running, the next step is to get PHP Manager for IIS installe
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-With the Rewrite Module installed, it’s time to set up our PHP environment. Start by creating a new folder on your C: drive called `C:\PHP`. This will be the home for all the PHP files we’ll be working with. Next, grab the PHP 7.3.8 zip file (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files. Once you’ve got it, extract everything from that zip file straight into the `C:\PHP` folder. Now we’re ready to get PHP integrated with IIS.
+With the Rewrite Module installed, it’s time to set up our PHP environment. Start by creating a new folder on your C: drive called "C:\PHP". This will be the home for all the PHP files we’ll be working with. Next, grab the PHP 7.3.8 zip file (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files. Once you’ve got it, extract everything from that zip file straight into the "C:\PHP" folder. Now we’re ready to get PHP integrated with IIS.
 </p>
 <br />
 
@@ -79,7 +80,7 @@ Before we dive into installing osTicket, we need to tweak some settings in IIS. 
 </p>
 <br/>
 
-Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the installation files, then extract it. Inside the extracted files, you’ll find a folder named "upload"—go ahead and copy that folder to c:\inetpub\wwwroot. Once it’s in place, rename the "upload" folder to "osTicket." After that, give your IIS server a quick reload to make sure everything’s in sync. And just like that, osTicket is ready to be configured!
+Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the installation files, then extract it. Inside the extracted files, you’ll find a folder named "upload"—go ahead and copy that folder to "c:\inetpub\wwwroot" Once it’s in place, rename the "upload" folder to "osTicket." After that, give your IIS server a quick reload to make sure everything’s in sync. And just like that, osTicket is ready to be configured!
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -92,7 +93,7 @@ Now it’s time to get osTicket itself set up. Grab osTicket v1.15.8 from the in
 </p>
 <br/>
 
-In the IIS console, navigate to Sites -> Default -> osTicket. Then, click on "Browse *:80," and you should see the osTicket installation page pop up. However, before we proceed with the installation, we need to enable a few PHP extensions. To do this, stay in the osTicket menu in IIS, and click on PHP Manager. From there, select "Enable or disable an extension." Make sure to enable the following extensions: php_imap.dll, php_intl.dll, and php_opcache.dll. These are essential for osTicket to run smoothly.
+In the IIS console, navigate to Sites -> Default -> osTicket. Then, click on "Browse *:80," and you should see the osTicket installation page pop up. However, before we proceed with the installation, we need to enable a few PHP extensions. To do this, stay in the osTicket menu in IIS, and click on PHP Manager. From there, select "Enable or disable an extension." Make sure to enable the following extensions: "php_imap.dll, php_intl.dll" and "php_opcache.dll" These are essential for osTicket to run smoothly.
 <br/>
 
 
@@ -103,7 +104,7 @@ In the IIS console, navigate to Sites -> Default -> osTicket. Then, click on "Br
 </p>
 </p>
 
-Before we proceed with the osTicket installation, there’s one more task to take care of: renaming a file and adjusting its permissions. Head over to C:\inetpub\wwwroot\osTicket\include and find the file named ost-sampleconfig.php. Rename it to ost-config.php. Next, we need to lock down the permissions on this file. Right-click on ost-config.php`, go to Properties, and adjust the permissions by disabling inheritance. Remove all existing permissions, then add new permissions for "Everyone" and set them to "Full Control." This step ensures that the file is properly secured before we continue with the installation.
+Before we proceed with the osTicket installation, there’s one more task to take care of: renaming a file and adjusting its permissions. Head over to "C:\inetpub\wwwroot\osTicket\include" and find the file named "ost-sampleconfig.php" Rename it to "ost-config.php" Next, we need to lock down the permissions on this file. Right-click on "ost-config.php" to Properties, and adjust the permissions by disabling inheritance. Remove all existing permissions, then add new permissions for "Everyone" and set them to "Full Control." This step ensures that the file is properly secured before we continue with the installation.
 
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -130,4 +131,4 @@ In the osTicket setup window, it’s time to fill in the details to get everythi
 </p>
 </p>
 
-Congratulations—osTicket is now installed! But before you start using it, we need to do a little cleanup. First, go to C:\inetpub\wwwroot\osTicket and delete the setup folder. Then, head back to C:\inetpub\wwwroot\osTicket\include and adjust the permissions on the ost-config.php file. It’s time to tighten things up: remove the full access permissions for "Everyone" and switch it to "Read" only. This will keep your setup secure as you start using osTicket.
+Congratulations—osTicket is now installed! But before you start using it, we need to do a little cleanup. First, go to "C:\inetpub\wwwroot\osTicket" and delete the setup folder. Then, head back to "C:\inetpub\wwwroot\osTicket\include" and adjust the permissions on the "ost-config.php" file. It’s time to tighten things up: remove the full access permissions for "Everyone" and switch it to "Read" only. This will keep your setup secure as you start using osTicket.
